@@ -1,0 +1,149 @@
+<!doctype html>
+<html> 
+<head>
+    <meta charset="utf-8">
+    <title>ООО "Оптима-Пласт" г. Запорожье</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+	<style>
+	@font-face {
+		font-family: franklin_gothic;
+		src: url(fonts/franklin_gothic_demi.ttf);
+		src: url(fonts/franklin_gothic_demi.ttf);
+	   }
+	@font-face {
+			font-family: fregat_regular;
+			src: url(fonts/fregat_regular.otf);
+		   }
+	</style>
+</head>
+<body class="body-contacts clearfix">
+	<header class="section" id="page_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-1 col-xs-1">
+					<a href="#"><img class="logo" src="images/logo.png" alt="Логотип Оптима-Пласт"></a>
+					<!--a href="#" class="hidden-xs hidden-sm">RU</a>
+					<a href="#" class="hidden-xs hidden-sm">EN</a>
+					<a href="#" class="hidden-xs hidden-sm">UA</a-->
+				</div>
+				<div class="col-lg-8 col-md-8 col-sm-10 sol-xs-10">
+					<nav class="navbar navbar-default" role="navigation">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="navbar">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">ГЛАВНАЯ</a></li>
+								<li><a href="products.html">ПРОДУКЦИЯ</a></li>
+								<li><a href="#">ПАРТНЕРЫ</a></li>
+								<li class="active"><a href="contact.html">КОНТАКТЫ</a></li>
+							</ul>
+						  </div><!-- end navbar-collapse -->
+					</nav>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
+					<div><small>+38</small> (050)533 88 29</div>
+					<div><small>+38</small> (067)612 89 12</div>
+					<div class="hidden-xs hidden-sm">ООО "Оптима-Пласт"<br>г. Запорожье</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<h1>КОНТАКТЫ</h1>
+					<p class="contact-block">
+						Тел/Факс.: (061) 218-62-63 <br>
+						Юридический адрес: 69118, г. Запорожье, <br>
+						ул. Новокузнецкая 20-А/166 <br>
+						Контактное лицо: Еременко Игорь Юрьевич <br>
+						тел.: (050) 533-88-29, (067) 612-89-12
+					</p>
+					<button form="send_mail" type="submit" class="btn btn-success hidden-xs hidden-sm">написать письмо</button>
+					<a href="#modal_window" data-toggle="modal" class="btn btn-success hidden-lg hidden-md" role="button">написать письмо</a>
+				</div>
+				<div class="col-lg-5 col-md-5 col-sm-5 contact_form">
+					<form role="form" id="send_mail" name="send_mail" class="form-horizontal hidden-xs hidden-sm" action="#" method="post">
+						<div class="form-group">
+							<input name="name_parents" class="form-control" type="text" placeholder="Ваше имя">
+						</div>
+						<div class="form-group">
+							<input name="e_mail" class="form-control" type="email" placeholder="Электронный адрес">
+						</div>
+						<div class="form-group">
+							<input name="tel" class="form-control" type="tel" placeholder="+3 (   ) ... .. ..">
+						</div>
+						<div class="form-group">
+							<textarea name="message" placeholder="Текст сообщения" class="form-control" rows="5"></textarea>
+						</div>
+						
+					</form>		
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer" class="section footer-inner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="content_footer"> © 2013 "Оптима-пласт" * Пластмассовые изделия медицинского назначения * Запорожье, Украина * Все права защищены</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	  <!-- modal windows -->
+	<div id="modal_window" class="modal fade" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+					<h3 class="modal-title">Написать письмо</h3>
+				</div>
+					<div class="modal-body">
+
+							<form role="form" name="send_mail" class="form-horizontal" action="#" method="post">
+								<div class="form-group">
+									<input name="name_parents" class="form-control" type="text" placeholder="Ваше имя">
+								</div>
+								<div class="form-group">
+									<input name="e_mail" class="form-control" type="email" placeholder="Электронный адрес">
+								</div>
+								<div class="form-group">
+									<input name="tel" class="form-control" type="tel" placeholder="+3 (   ) ... .. ..">
+								</div>
+								<div class="form-group">
+									<textarea name="message" placeholder="Текст сообщения" class="form-control" rows="3"></textarea>
+								</div>
+								<button type="submit" class="btn btn-success">Написать письмо</button>
+							</form>
+
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-success" data-dismiss="modal">Закрыть</button>
+					</div>
+				</div>
+			</div>
+        </div>
+<script src="js/jquery.min.js"></script>
+<!--script>
+$(document).ready(function() {
+    $("head").append("<link rel='stylesheet' type='text/css' href='css/bootstrap.min.css' />");
+	$("head").append("<link rel='stylesheet' type='text/css' href='css/custom.css' />");
+})
+</script-->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
